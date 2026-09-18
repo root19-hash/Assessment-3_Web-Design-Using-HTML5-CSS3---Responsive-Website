@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Matheson Library Printing Services, view our operating hours, and submit a print request using our online booking form."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <title>Booking &amp; Contact - Matheson Library Printing Services</title>
+  </head>
+
+  <body>
+    <!-- Header: Main branding and website title -->
+    <header>
+      <h1>Booking &amp; Contact</h1>
+      <p>Get in touch with us and book your printing service</p>
+    </header>
+
+    <!-- Nav: Consistent navigation menu on every page -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li>
+          <a href="contact.html" aria-current="page">Booking &amp; Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main: The primary content area of the page -->
+    <main>
+      <!-- Task 2: Submit a Print Request -->
+      <section aria-labelledby="form-heading">
+        <h2 id="form-heading">Printing Booking Form</h2>
+
+        <p>
+          Complete the form below to submit your print request. Please provide
+          accurate information so that we can process your request correctly.
+        </p>
+
+        <form action="#" method="post">
+          <!-- Full Name -->
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <!-- Student/Staff ID -->
+          <label for="student-id">Student/Staff ID:</label>
+          <input type="text" id="student-id" name="student-id" required />
+
+          <!-- Email -->
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <!-- Phone -->
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <!-- Document Name -->
+          <label for="document-name">Document Name:</label>
+          <input type="text" id="document-name" name="document-name" required />
+
+          <!-- Printing Service -->
+          <label for="service">Select a Service:</label>
+          <select id="service" name="service" required>
+            <option value="">-- Please Select --</option>
+            <option value="black-white">Black and White Printing</option>
+            <option value="colour">Colour Printing</option>
+            <option value="photocopying">Photocopying</option>
+          </select>
+
+          <!-- Number of Copies -->
+          <label for="copies">Number of Copies:</label>
+          <input type="number" id="copies" name="copies" min="1" required />
+
+          <!-- Print Type -->
+          <label for="print-type">Print Type:</label>
+          <select id="print-type" name="print-type" required>
+            <option value="">-- Please Select --</option>
+            <option value="single-sided">Single-Sided</option>
+            <option value="double-sided">Double-Sided</option>
+          </select>
+
+          <!-- Paper Size -->
+          <label for="paper-size">Paper Size:</label>
+          <select id="paper-size" name="paper-size" required>
+            <option value="">-- Please Select --</option>
+            <option value="a4">A4</option>
+            <option value="a3">A3</option>
+          </select>
+
+          <!-- Additional Instructions -->
+          <label for="message">Additional Instructions:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Enter any additional printing instructions..."
+          ></textarea>
+
+          <!-- Submit button -->
+          <button type="submit">Submit Print Request</button>
+        </form>
+      </section>
+
+      <!-- Operating Hours: presented as a table -->
+      <section aria-labelledby="hours-heading">
+        <h2 id="hours-heading">Operating Hours</h2>
+
+        <p>
+          Our printing service is available during the following library
+          operating hours:
+        </p>
+
+        <table>
+          <caption>
+            Matheson Library Printing Service Operating Hours
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday - Thursday</td>
+              <td>8:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>8:00 AM - 4:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>1:00 PM - 5:00 PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>1:00 PM - 5:00 PM</td>
+            </tr>
+            <tr>
+              <td>Public Holidays</td>
+              <td>Announced closer to the dates</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Please check for the latest public holiday announcement before
+          visiting the library.
+        </p>
+      </section>
+
+      <!-- Task 3: Contact and Service Information -->
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+
+        <p>
+          If you have questions about our printing services or need assistance
+          with a printing request, please contact us using the information
+          below.
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          info@mathesonlibrary.com
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+          +675 0000 0000
+        </p>
+
+        <address>
+          <strong>Address:</strong> <br />
+          Independence Drive, Taraka Campus, Lae, Morobe Province, 411, Papua
+          New Guinea.
+        </address>
+
+        <h3 id="location-heading">Our Location</h3>
+
+        <figure class="map-figure" aria-labelledby="location-heading">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.786268028509!2d146.9943663!3d-6.6733836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x68fa0343fdc00a09%3A0x408890088ceb7e28!2sMatheson%20Library!5e0!3m2!1sen!2spg!4v1788604422860!5m2!1sen!2spg"
+            width="100"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map showing the location of Matheson Library"
+          >
+          </iframe>
+          <figcaption>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Independence+Drive+Taraka+Campus+Lae+Morobe+Province"
+            >
+              Get directions
+            </a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Aside: Complementary content -->
+      <aside aria-labelledby="quick-updates-heading">
+        <h3 id="quick-updates-heading">Quick Updates</h3>
+
+        <p>
+          Please provide accurate information when submitting your printing
+          request.
+        </p>
+
+        <p>
+          Printing requests should be submitted during the library's operating
+          hours.
+        </p>
+
+        <p>
+          Public holiday operating hours will be announced closer to the
+          relevant dates.
+        </p>
+      </aside>
+    </main>
+
+    <!-- Footer: Copyright and metadata info -->
+    <footer>
+      <p>
+        &copy; 2026 Matheson Library Printing Services. Designed for IS229
+        Assessment 2.
+      </p>
+    </footer>
+  </body>
+</html>
