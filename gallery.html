@@ -8,17 +8,19 @@
       content="Browse photos of black and white printing, colour printing, and the printing facilities at Matheson Library Printing Services."
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
     <title>Gallery - Matheson Library Printing Services</title>
   </head>
   <body>
     <!-- Header: Main branding and website title -->
-    <header>
-      <h1>Gallery</h1>
-      <p>Take a look at our printing services and facilities</p>
+    <header class="site-header">
+      <div class="header-container">
+        <h1>Gallery</h1>
+        <p>Take a look at our printing services and facilities</p>
+      </div>
     </header>
     <!-- Nav: Consistent navigation menu on every page -->
-    <nav>
+    <nav class="main-nav" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -44,35 +46,37 @@
             assignments, reports, posters, and other printed materials.
           </p>
           <!-- Sample images, each wrapped in a figure with a caption -->
-          <figure>
-            <img
-              src="../images/Black & White Printed.jpg"
-              alt="Example of black and white printing"
-              width="300"
-            />
-            <figcaption>Black and white assignment printing</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="../images/Colored.png"
-              alt="Example of colour printing"
-              width="300"
-            />
-            <figcaption>
-              Colour printing for posters and presentations
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="../images/PhotoCopied.png"
-              alt="Example of document printing"
-              width="300"
-            />
-            <figcaption>General document Photo-Copied</figcaption>
-          </figure>
+          <div class="gallery-grid">
+            <figure>
+              <img
+                src="Images/Black & White Printed.jpg"
+                alt="Example of black and white printing"
+                width="300"
+              />
+              <figcaption>Black and white assignment printing</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="Images/Colored.png"
+                alt="Example of colour printing"
+                width="300"
+              />
+              <figcaption>
+                Colour printing for posters and presentations
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="Images/PhotoCopied.png"
+                alt="Example of document printing"
+                width="300"
+              />
+              <figcaption>General document Photo-Copied</figcaption>
+            </figure>
+          </div>
         </article>
         <!-- Article: Library facilities -->
-        <article aria-labelledby="facilities-heading">
+        <article class="panel" aria-labelledby="facilities-heading">
           <h3 id="facilities-heading">Our Facilities</h3>
           <p>
             Our printing facilities are designed to provide students and library
@@ -80,37 +84,35 @@
           </p>
           <figure>
             <img
-              src="../images/Printer.jpg"
+              src="Images/Printer.jpg"
               alt="Matheson Library printing facility"
               width="800"
             />
             <figcaption>Matheson Library printing station</figcaption>
           </figure>
         </article>
-        <article aria-labelledby="video-heading">
+        <article class="panel" aria-labelledby="video-heading">
           <h3 id="video-heading">Watch: How to Submit a Print Request</h3>
           <p>
             A short walkthrough of the online print request form, showing how to
             fill it in and submit a request.
           </p>
-          <figure>
-            <video controls width="800" poster="../images/Printer.jpg">
-              <source src="/video/Booking .mp4" type="video/mp4" />
+          <figure class="video-container">
+            <video controls poster="Images/Printer.jpg">
+              <source src="Video/Booking_with_narration.mp4" type="video/mp4" />
               Your browser does not support embedded video. You can
-              <a href="../video/booking-form-walkthrough.mp4"
-                >download the video</a
-              >
+              <a href="Video/Booking_with_narration.mp4">download the video</a>
               instead.
             </video>
             <figcaption>
-              A walkthrough of submitting a print request through the Booking &
-              Contact form.
+              A walkthrough of submitting a print request through the Booking
+              &amp; Contact form.
             </figcaption>
           </figure>
         </article>
       </section>
       <!-- Aside: Complementary content -->
-      <aside aria-labelledby="quick-updates-heading">
+      <aside class="updates" aria-labelledby="quick-updates-heading">
         <h3 id="quick-updates-heading">Quick Updates</h3>
         <p>
           New photos and examples of our printing services may be added to the
@@ -126,7 +128,7 @@
     <footer>
       <p>
         &copy; 2026 Matheson Library Printing Services. Designed for IS229
-        Assessment 2.
+        Assessment 3.
       </p>
     </footer>
   </body>
