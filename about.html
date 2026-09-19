@@ -8,20 +8,22 @@
       content="Learn about Matheson Library Printing Services, our mission, and why students and staff choose us for affordable, reliable printing."
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
 
     <title>About Us - Matheson Library Printing Services</title>
   </head>
 
   <body>
     <!-- Header: Main branding and website title -->
-    <header>
-      <h1>About Us</h1>
-      <p>Your convenient and reliable library printing service</p>
+    <header class="site-header">
+      <div class="header-container">
+        <h1>About Us</h1>
+        <p>Your convenient and reliable library printing service</p>
+      </div>
     </header>
 
     <!-- Nav: Consistent navigation menu on every page -->
-    <nav>
+    <nav class="main-nav" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" aria-current="page">About Us</a></li>
@@ -47,30 +49,39 @@
           important documents, we are here to help.
         </p>
 
-        <!-- Article: A self-contained piece of content -->
-        <article aria-labelledby="mission-heading">
-          <h3 id="mission-heading">Our Mission</h3>
+        <div class="grid-3">
+          <!-- Article: A self-contained piece of content -->
+          <article class="panel" aria-labelledby="mission-heading">
+            <h3 id="mission-heading">Our Mission</h3>
 
-          <p>
-            Our mission is to provide a simple and efficient printing service
-            that supports students and library users with their academic and
-            everyday printing needs.
-          </p>
-        </article>
+            <p>
+              Our mission is to provide a simple and efficient printing service
+              that supports students and library users with their academic and
+              everyday printing needs.
+            </p>
+          </article>
 
-        <article aria-labelledby="why-choose-heading">
-          <h3 id="why-choose-heading">Why Choose Us?</h3>
+          <article class="panel" aria-labelledby="why-choose-heading">
+            <h3 id="why-choose-heading">Why Choose Us?</h3>
 
-          <p>
-            We offer a convenient location, affordable printing, and friendly
-            service. Our printing services are designed to save you time and
-            make your printing experience easier.
-          </p>
-        </article>
+            <p>
+              We offer a convenient location, affordable printing, and friendly
+              service. Our printing services are designed to save you time and
+              make your printing experience easier.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Convenient location</h3>
+            <p>
+              Our library location makes it easy to print documents while you
+              study or work.
+            </p>
+          </article>
+        </div>
       </section>
 
       <!-- Aside: Complementary content -->
-      <aside aria-labelledby="quick-updates-heading">
+      <aside class="updates" aria-labelledby="quick-updates-heading">
         <h3 id="quick-updates-heading">Quick Updates</h3>
 
         <p>
@@ -90,7 +101,7 @@
     <footer>
       <p>
         &copy; 2026 Matheson Library Printing Services. Designed for IS229
-        Assessment 2.
+        Assessment 3.
       </p>
     </footer>
   </body>

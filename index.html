@@ -15,15 +15,18 @@
 
   <body>
     <!-- Header: Main branding and website title -->
-    <header>
-      <h1>Matheson Library Printing Services</h1>
-      <p>
-        Fast, affordable, and convenient printing for students and library users
-      </p>
+    <header class="site-header">
+      <div class="header-container">
+        <h1>Matheson Library Printing Services</h1>
+        <p>
+          Fast, affordable, and convenient printing for students and library
+          users
+        </p>
+      </div>
     </header>
 
     <!-- Nav: Consistent navigation menu on every page -->
-    <nav>
+    <nav class="main-nav" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -35,59 +38,88 @@
 
     <!-- Main: The primary content area of the page -->
     <main>
-      <!-- Welcome section -->
-      <section>
-        <h2>Welcome to Matheson Library Printing Services</h2>
+      <div class="updates">
+        <strong>Quick Updates:</strong> Explore our services, gallery, and
+        booking information before visiting the library.
+      </div>
 
-        <p>
-          Welcome to Matheson Library Printing Services. We provide convenient,
-          affordable, and reliable printing services for students, staff, and
-          library users.
-        </p>
-
-        <p>
-          Whether you need to print assignments, reports, study materials,
-          presentations, or other documents, our service is here to make
-          printing easy and convenient.
-        </p>
-
-        <!-- Article: A self-contained piece of content -->
-        <article>
-          <h3>Quality Printing Made Easy</h3>
-
+      <section class="hero-grid" aria-labelledby="welcome-heading">
+        <div>
+          <h2 id="welcome-heading">
+            Welcome to Matheson Library Printing Services
+          </h2>
           <p>
-            We offer a range of printing services to meet your needs. Visit our
-            Services page to learn more about the printing options available.
+            Welcome to Matheson Library Printing Services. We provide
+            convenient, affordable, and reliable printing services for students,
+            staff, and library users.
           </p>
-
           <p>
-            Ready to print? Visit our Booking &amp; Contact page to submit a
-            printing request.
+            Whether you need to print assignments, reports, study materials,
+            presentations, or other documents, our service is here to make
+            printing easy and convenient.
           </p>
-        </article>
+          <article class="panel">
+            <h3>Quality Printing Made Easy</h3>
+            <p>
+              We offer a range of printing services to meet your needs. Visit
+              our Services page to learn more about the printing options
+              available.
+            </p>
+            <p>
+              Ready to print? Visit our Booking &amp; Contact page to submit a
+              printing request.
+            </p>
+            <a class="btn btn-primary" href="contact.html"
+              >Start a print request</a
+            >
+          </article>
+        </div>
+
+        <aside class="panel">
+          <h3>Quick Updates</h3>
+          <p>
+            Explore our website to learn more about our services, view our
+            gallery, or contact us about a printing request.
+          </p>
+          <p>
+            We are committed to providing a simple and convenient printing
+            experience for all library users.
+          </p>
+        </aside>
       </section>
 
-      <!-- Aside: Complementary content -->
-      <aside>
-        <h3>Quick Updates</h3>
-
-        <p>
-          Explore our website to learn more about our services, view our
-          gallery, or contact us about a printing request.
-        </p>
-
-        <p>
-          We are committed to providing a simple and convenient printing
-          experience for all library users.
-        </p>
-      </aside>
+      <section aria-labelledby="features-heading">
+        <h2 id="features-heading">Printing Made Simple</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Affordable options</h3>
+            <p>
+              Choose black and white, colour, or photocopying services to suit
+              your budget.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Flexible choices</h3>
+            <p>
+              Select A4 or A3 paper and single-sided or double-sided printing.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Easy booking</h3>
+            <p>
+              Send your request through our simple online form before visiting
+              the library.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <!-- Footer: Copyright and metadata info -->
     <footer>
       <p>
         &copy; 2026 Matheson Library Printing Services. Designed for IS229
-        Assessment 2.
+        Assessment 3.
       </p>
     </footer>
   </body>
