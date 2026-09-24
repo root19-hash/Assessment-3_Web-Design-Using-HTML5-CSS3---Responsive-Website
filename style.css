@@ -68,6 +68,23 @@ a:hover {
   outline-offset: 0.2rem;
 }
 
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10;
+  transform: translateY(-200%);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--cream);
+  color: var(--maroon-dark);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 h1,
 h2,
 h3 {
@@ -473,5 +490,15 @@ footer {
   table {
     display: block;
     overflow-x: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }
