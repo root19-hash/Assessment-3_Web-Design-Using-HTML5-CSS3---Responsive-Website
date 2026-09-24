@@ -67,11 +67,11 @@ Images are stored in `Images/` and the video is stored in `Video/`. Relative pat
 
 The intended test viewports are:
 
-| Viewport                      | Structural check                                          | Result                                                |
-| ----------------------------- | --------------------------------------------------------- | ----------------------------------------------------- |
+| Viewport                      | Structural check                                                                      | Result                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | Mobile, approximately 375px   | Navigation stays in one horizontal row and can scroll; tables can scroll horizontally | Implemented in CSS; browser inspection still required |
-| Tablet, approximately 768px   | Two-column Grid layouts appear where appropriate          | Implemented in CSS; browser inspection still required |
-| Desktop, approximately 1200px | Three-column content grids and wide layouts are available | Implemented in CSS; browser inspection still required |
+| Tablet, approximately 768px   | Two-column Grid layouts appear where appropriate                                      | Implemented in CSS; browser inspection still required |
+| Desktop, approximately 1200px | Three-column content grids and wide layouts are available                             | Implemented in CSS; browser inspection still required |
 
 ## Verification completed
 
