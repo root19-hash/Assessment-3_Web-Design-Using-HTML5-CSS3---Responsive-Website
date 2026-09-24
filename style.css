@@ -1,12 +1,27 @@
 :root {
-  --terracotta: #d96b27;
-  --maroon: #6b1d2f;
-  --chocolate: #2b1b17;
-  --cream: #fdfbf7;
-  --paper: #fff7ed;
-  --border: #dfc7b8;
-  --shadow: 0 0.75rem 2rem rgba(43, 27, 23, 0.1);
-  --content-width: 75rem;
+  --terracotta: #c65320;
+  --terracotta-dark: #9f3f1b;
+  --maroon: #5b1f32;
+  --maroon-dark: #3e1422;
+  --chocolate: #241915;
+  --cream: #f8f4ed;
+  --paper: #fffaf3;
+  --surface: #ffffff;
+  --border: #dbc8b8;
+  --muted: #695b54;
+  --shadow-sm: 0 0.25rem 0.8rem rgba(36, 25, 21, 0.08);
+  --shadow: 0 1rem 2.5rem rgba(36, 25, 21, 0.12);
+  --content-width: 76rem;
+  --reading-width: 68ch;
+  --space-1: 0.35rem;
+  --space-2: 0.7rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4.5rem;
+  --radius-sm: 0.35rem;
+  --radius-md: 0.7rem;
 }
 
 *,
@@ -24,7 +39,7 @@ body {
   min-width: 18rem;
   background: var(--cream);
   color: var(--chocolate);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
   line-height: 1.6;
 }
 
@@ -56,17 +71,28 @@ a:hover {
 h1,
 h2,
 h3 {
+  margin-top: 0;
   line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+th,
+.btn,
+.main-nav a {
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 h1 {
   margin: 0;
-  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  letter-spacing: 0.01em;
 }
 
 h2 {
   color: var(--maroon);
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
 }
 
 h3 {
@@ -77,7 +103,14 @@ h3 {
 p,
 ul,
 ol {
-  max-width: 70ch;
+  max-width: var(--reading-width);
+}
+
+small,
+figcaption,
+.site-header p,
+footer {
+  color: var(--muted);
 }
 
 .site-header {
@@ -85,12 +118,12 @@ ol {
     linear-gradient(rgba(43, 27, 23, 0.58), rgba(43, 27, 23, 0.58)),
     url("Images/Header Background.png") center / cover;
   color: var(--cream);
-  padding: 3rem 1rem;
+  padding: clamp(3.5rem, 10vw, 7rem) 1rem clamp(3rem, 8vw, 5rem);
   text-align: center;
 }
 
 .site-header p {
-  margin: 1rem auto 0;
+  margin: var(--space-4) auto 0;
   max-width: 48rem;
   font-size: 1.1rem;
 }
@@ -144,7 +177,7 @@ footer {
 }
 
 main {
-  padding-block: 2rem 3rem;
+  padding-block: var(--space-6) var(--space-7);
 }
 
 main > section,
@@ -170,9 +203,10 @@ main > aside {
 .booking-form,
 main > section,
 main > aside {
-  padding: clamp(1.25rem, 3vw, 2rem);
+  padding: clamp(1.35rem, 3vw, 2.4rem);
   border: 0.08rem solid var(--border);
-  background: #fff;
+  border-radius: var(--radius-md);
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
 
@@ -191,8 +225,7 @@ figure {
 }
 
 figcaption {
-  padding-top: 0.5rem;
-  color: var(--maroon);
+  padding-top: var(--space-2);
   font-style: italic;
 }
 
