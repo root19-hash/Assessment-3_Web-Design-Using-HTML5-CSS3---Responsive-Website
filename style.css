@@ -168,8 +168,8 @@ footer {
 .main-nav ul {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 0.9rem;
+  justify-content: center;
+  gap: 1rem;
   overflow-x: auto;
   margin-block: 0;
   padding: 0.8rem 0;
@@ -177,15 +177,14 @@ footer {
 }
 
 .main-nav li {
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 0 0 auto;
 }
 
 .main-nav a {
   display: block;
   min-width: 0;
   border-radius: var(--radius-sm);
-  padding: 0.85rem 1.25rem;
+  padding: 0.65rem 0.9rem;
   color: var(--cream);
   font-weight: 700;
   text-align: center;
