@@ -424,6 +424,22 @@ footer {
   .hero-grid {
     grid-template-columns: minmax(0, 1.4fr) minmax(15rem, 0.6fr);
   }
+
+  .grid-3,
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 62rem) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 0.5fr);
+  }
+
+  .grid-3,
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 39.99rem) {
@@ -435,6 +451,14 @@ footer {
 
   .main-nav li {
     flex: initial;
+  }
+
+  .hero-grid,
+  .grid-2,
+  .grid-3,
+  .contact-layout,
+  .gallery-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   table {
