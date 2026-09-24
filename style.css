@@ -166,10 +166,9 @@ footer {
 }
 
 .main-nav ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
   overflow-x: auto;
   margin-block: 0;
   padding: 0.8rem 0;
@@ -177,7 +176,7 @@ footer {
 }
 
 .main-nav li {
-  flex: 0 0 auto;
+  min-width: 0;
 }
 
 .main-nav a {
@@ -496,12 +495,15 @@ footer {
 
 @media (max-width: 39.99rem) {
   .main-nav ul {
-    justify-content: flex-start;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-template-columns: none;
+    justify-content: start;
     padding-inline: 0.25rem;
   }
 
   .main-nav li {
-    flex: 0 0 auto;
+    min-width: 8rem;
   }
 
   .main-nav a {
