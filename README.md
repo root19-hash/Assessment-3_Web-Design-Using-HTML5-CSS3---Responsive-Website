@@ -6,6 +6,47 @@ IS229 Assessment 3 responsive web design project by Joseph Seeto.
 
 The website is designed for students, staff, and members of the public who need library printing information or want to submit a print request.
 
+## Finding Printing Service Information
+
+Users can:
+
+- View available printing and photocopying services
+- See available paper sizes and printing types
+- Read instructions for using the printing service
+- Find relevant information before visiting the library
+
+**Example user task:**
+
+> "I want to know what printing services the library provides."
+
+## Submit a Print Request
+
+Users can complete a print request form containing information such as:
+
+- Name
+- Student/Staff ID
+- Email
+- Document name
+- Number of copies
+- Print type
+- Paper size
+- Additional instructions
+
+This feature is especially useful because the assignment requires at least one substantial form with labels, suitable input types, and HTML5 validation.
+
+## Find Contact and Service Information
+
+Users can:
+
+- Find the library's location
+- View opening hours
+- Find phone, email, and other contact details
+- Get directions and other relevant information
+
+**Example user task:**
+
+> "I need to know where the printing service is and when it is open."
+
 ## Pages
 
 - `index.html` - homepage and printing service overview
@@ -38,6 +79,20 @@ The intended test viewports are:
 - HTML container tags were checked for balanced opening and closing tags.
 - Local image and video paths were checked against the `Images/` and `Video/` folders.
 - `git diff --check` passed after the latest edits.
+
+## Project Structure
+
+A3/
+├── Images/
+├── Video/
+├── about.html
+├── contact.html
+├── gallery.html
+├── index.html
+├── LICENSE
+├── README.md
+├── services.html
+└── style.css
 
 ## AI Use Declaration
 

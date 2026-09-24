@@ -142,7 +142,8 @@ footer {
 .site-header p {
   margin: var(--space-4) auto 0;
   max-width: 48rem;
-  font-size: 1.1rem;
+  color: var(--cream);
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
 }
 
 .header-container,
@@ -166,9 +167,10 @@ footer {
 
 .main-nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   gap: 0.5rem;
+  overflow-x: auto;
   margin-block: 0;
   padding: 0.8rem 0;
   list-style: none;
@@ -470,13 +472,12 @@ footer {
 
 @media (max-width: 39.99rem) {
   .main-nav ul {
-    align-items: stretch;
-    flex-direction: column;
-    text-align: center;
+    justify-content: flex-start;
+    padding-inline: 0.25rem;
   }
 
   .main-nav li {
-    flex: initial;
+    flex: 0 0 auto;
   }
 
   .hero-grid,
