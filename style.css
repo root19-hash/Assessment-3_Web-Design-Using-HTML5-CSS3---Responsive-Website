@@ -161,7 +161,7 @@ footer {
 }
 
 .main-nav {
-  background: var(--chocolate);
+  background-color: #5b1f32;
   border-bottom: 0.2rem solid var(--terracotta);
 }
 
