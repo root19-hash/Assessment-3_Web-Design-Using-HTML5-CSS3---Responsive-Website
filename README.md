@@ -69,7 +69,7 @@ The intended test viewports are:
 
 | Viewport                      | Structural check                                          | Result                                                |
 | ----------------------------- | --------------------------------------------------------- | ----------------------------------------------------- |
-| Mobile, approximately 375px   | Navigation stacks and tables can scroll horizontally      | Implemented in CSS; browser inspection still required |
+| Mobile, approximately 375px   | Navigation stays in one horizontal row and can scroll; tables can scroll horizontally | Implemented in CSS; browser inspection still required |
 | Tablet, approximately 768px   | Two-column Grid layouts appear where appropriate          | Implemented in CSS; browser inspection still required |
 | Desktop, approximately 1200px | Three-column content grids and wide layouts are available | Implemented in CSS; browser inspection still required |
 
@@ -94,6 +94,19 @@ A3/
 ├── services.html
 └── style.css
 
+## Assistance Received
+
+GitHub Copilot helped with the following project tasks while the project owner reviewed and controlled the final changes:
+
+- Reviewed the existing A2 HTML structure and helped plan a consistent visual system.
+- Built and refined the custom CSS design tokens, typography, spacing, colors, buttons, forms, Flexbox layouts, Grid layouts, and responsive breakpoints.
+- Improved the navigation bar, including its horizontal layout, maroon background, readable text, and mobile overflow behavior.
+- Removed the unnecessary horizontal Quick Updates banner from the homepage.
+- Improved image and video handling with responsive media frames, descriptive alt text checks, and lazy-loading attributes.
+- Added accessibility support including visible keyboard focus, skip links, semantic landmarks, form labels, and reduced-motion support.
+- Checked the pages in a browser at mobile, tablet, and desktop viewport settings for overflow, navigation behavior, layout structure, and focus states.
+- Helped review Git changes, create focused milestone commits, and push the approved changes to the `origin main` GitHub repository.
+
 ## AI Use Declaration
 
-AI tools were used as learning and review assistance. They helped identify HTML structure issues, suggest readable CSS Grid and Flexbox patterns, check responsive requirements, and explain accessibility and Git workflow choices. The project owner reviewed the changes and remains responsible for the final code, content, testing, and submission.
+AI tools were used as learning and review assistance, not as a replacement for the project owner's decisions. The project owner reviewed the code, selected the final changes, remains responsible for the content and testing, and retains direct control of the GitHub repository and final submission.
