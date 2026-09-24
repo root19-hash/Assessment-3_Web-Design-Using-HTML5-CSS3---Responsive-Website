@@ -138,6 +138,7 @@ footer {
 
 .main-nav {
   background: var(--chocolate);
+  border-bottom: 0.2rem solid var(--terracotta);
 }
 
 .main-nav ul {
@@ -156,17 +157,25 @@ footer {
 
 .main-nav a {
   display: block;
-  padding: 0.55rem 0.8rem;
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 1rem;
   color: var(--cream);
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
 }
 
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
   background: var(--terracotta);
   color: #fff;
+}
+
+.main-nav a:focus-visible {
+  outline-color: var(--cream);
 }
 
 .updates {
@@ -295,12 +304,30 @@ input,
 select,
 textarea {
   width: 100%;
-  padding: 0.7rem;
+  min-height: 3rem;
+  padding: 0.75rem 0.85rem;
   border: 0.08rem solid #94766b;
-  border-radius: 0.2rem;
-  background: #fff;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
   color: var(--chocolate);
   font: inherit;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 0.2rem rgba(198, 83, 32, 0.18);
+  outline: none;
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: var(--maroon);
 }
 
 textarea {
@@ -311,12 +338,21 @@ textarea {
   display: inline-block;
   width: fit-content;
   border: 0.1rem solid transparent;
-  border-radius: 0.2rem;
-  padding: 0.7rem 1rem;
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1.15rem;
   font: inherit;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-0.1rem);
 }
 
 .btn-primary {
@@ -325,13 +361,18 @@ textarea {
 }
 
 .btn-primary:hover {
-  background: var(--maroon);
+  background: var(--terracotta-dark);
   color: #fff;
 }
 
 .btn-secondary {
   border-color: var(--maroon);
   color: var(--maroon);
+}
+
+.btn-secondary:hover {
+  background: var(--maroon);
+  color: var(--cream);
 }
 
 footer {
