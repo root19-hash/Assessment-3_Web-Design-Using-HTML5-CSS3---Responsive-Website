@@ -285,6 +285,7 @@ main > aside {
 .panel,
 .booking-form,
 main > section,
+.contact-panel,
 main > aside {
   padding: clamp(1.35rem, 3vw, 2.4rem);
   border: 0.08rem solid var(--border);
@@ -295,6 +296,10 @@ main > aside {
 
 main > section,
 main > aside {
+  border-top: 0.35rem solid var(--terracotta);
+}
+
+.contact-panel {
   border-top: 0.35rem solid var(--terracotta);
 }
 
