@@ -136,6 +136,12 @@ footer {
   margin-inline: auto;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-nav {
   background: var(--chocolate);
   border-bottom: 0.2rem solid var(--terracotta);
@@ -179,6 +185,10 @@ footer {
 }
 
 .updates {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-3);
   margin: 1.5rem auto 0;
   padding: 0.8rem 1rem;
   border-left: 0.35rem solid var(--terracotta);
@@ -295,6 +305,10 @@ th {
   gap: 0.8rem;
 }
 
+.booking-form .btn {
+  justify-self: start;
+}
+
 .form-group {
   display: grid;
   gap: 0.35rem;
@@ -376,6 +390,8 @@ textarea {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   padding-block: 1.5rem;
   border-top: 0.08rem solid var(--border);
   color: var(--maroon);
