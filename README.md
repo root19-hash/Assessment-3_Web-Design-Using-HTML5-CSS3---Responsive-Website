@@ -82,13 +82,13 @@ The intended test viewports are:
 ## Evidence Screenshot of Responsiveness
 
 1. Mobile
-![Screenshot of Mobile Screen](Screenshot/Mobile.png)
+   ![Screenshot of Mobile Screen](Screenshot/Mobile.png)
 
 2. iPad
-![Screenshot of iPad screen](Screenshot/Ipad.jpg)
+   ![Screenshot of iPad screen](Screenshot/Ipad.jpg)
 
 3. Desktop
-![Screenshot of Desktop screen](Screenshot/Desktop.jpg)
+   ![Screenshot of Desktop screen](Screenshot/Desktop.jpg)
 
 ## Verification completed
 
