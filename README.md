@@ -79,6 +79,17 @@ The intended test viewports are:
 | Tablet, approximately 768px   | Two-column Grid layouts appear where appropriate                                      | Implemented in CSS; browser inspection still required |
 | Desktop, approximately 1200px | Three-column content grids and wide layouts are available                             | Implemented in CSS; browser inspection still required |
 
+## Evidence Screenshot of Responsiveness
+
+1.Mobile
+![Screenshot of Mobile Screen](Screenshot/Mobile.png)
+
+2.IPad
+![Screenshot of Ipad screen](Screenshot/Ipad.jpg)
+
+3.Desktop
+![Screenshot of Desktop screen](Screenshot/Desktop.jpg)
+
 ## Verification completed
 
 - All five pages link to `style.css`.
