@@ -2,6 +2,12 @@
 
 IS229 Assessment 3 responsive web design project by Joseph Seeto.
 
+## Links to My Website
+
+GitHub Repository URL: https://github.com/root19-hash/Assessment-3_Web-Design-Using-HTML5-CSS3---Responsive-Website.git
+
+Live Website URL: https://root19-hash.github.io/Assessment-3_Web-Design-Using-HTML5-CSS3---Responsive-Website/
+
 ## Audience
 
 The website is designed for students, staff, and members of the public who need library printing information or want to submit a print request.
@@ -83,6 +89,7 @@ The intended test viewports are:
 ## Project Structure
 
 A3/
+├── Screenshot/
 ├── Images/
 ├── Video/
 ├── about.html
