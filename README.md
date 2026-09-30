@@ -69,15 +69,25 @@ This is a static website using semantic HTML5 and custom CSS3. Layout uses Flexb
 
 Images are stored in `Images/` and the video is stored in `Video/`. Relative paths preserve the existing folder capitalization and filenames.
 
-## Responsive checks
+## Responsive Testing
 
-The intended test viewports are:
+**Tested with:** Playwright page automation through VS Code's integrated browser. The browser engine was not exposed by the tool. Measurements were made against the local project files; the live GitHub Pages site was reachable but was not viewport-audited.
 
-| Viewport                      | Structural check                                                                      | Result                                                |
-| ----------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Mobile, approximately 375px   | Navigation stays in one horizontal row and can scroll; tables can scroll horizontally | Implemented in CSS; browser inspection still required |
-| Tablet, approximately 768px   | Two-column Grid layouts appear where appropriate                                      | Implemented in CSS; browser inspection still required |
-| Desktop, approximately 1200px | Three-column content grids and wide layouts are available                             | Implemented in CSS; browser inspection still required |
+Tested viewports were 320px, 640px, 768px, 992px, 1200px, and 1400px, plus a requested 375px viewport that rendered as 376px. All five pages were measured at each width. The document had no horizontal overflow in the 35 page and viewport combinations. Navigation labels stayed on one line; at 320px and the 376px proxy, the navigation scrolled inside its own box.
+
+| Viewport            | Measured result                                                                                                                                                                                    |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mobile, 376px proxy | One-column main grids; navigation scrolls horizontally within its box. The services table scrolls within its container. All 10 contact form fields are labeled and full-width within their groups. |
+| Tablet, 768px       | No document overflow; two-column main grids; navigation labels remain on one line. Body text measures 16px.                                                                                        |
+| Desktop, 1200px     | No document overflow; `.grid-3` and gallery grids have three columns; navigation labels remain on one line. Body text measures 16px.                                                               |
+
+The one-to-two-column changes begin at 640px. `.grid-3` and gallery grids change from two to three columns at 992px. The hero remains two columns from 640px upward; `.grid-2` and contact layouts remain two columns after 640px.
+
+All four gallery images loaded and fit their containers at the tested widths. Three source images are cropped to 4:3 with `object-fit: cover`; the printer image displays at approximately 16:9. The contact map iframe fits its 16:9 container. The gallery video box is 16:9, but the video did not decode, so playback and source aspect ratio were not verified.
+
+**Accessibility measurements:** Body text measured 16px, with 17.14:1 contrast on white content panels. Normal navigation text measured 11.35:1; hovered navigation text measured 4.51:1. Inline links on the off-white panel measured 4.34:1 on hover. Button text measured 4.51:1. Keyboard focus indicators were observed, and the skip link revealed and navigated to `#main-content`. At the 376px proxy, some inline text links were 19px high, below a 44px target height.
+
+**Limits:** Exact 375px was not tested because the browser rendered the requested width as 376px. Physical touch devices, other browsers, screen readers, video playback, and the live site's responsive behavior were not tested.
 
 ## Evidence Screenshot of Responsiveness
 
