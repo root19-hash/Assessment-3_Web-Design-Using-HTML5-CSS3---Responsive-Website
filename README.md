@@ -71,23 +71,21 @@ Images are stored in `Images/` and the video is stored in `Video/`. Relative pat
 
 ## Responsive Testing
 
-**Tested with:** Playwright page automation through VS Code's integrated browser. The browser engine was not exposed by the tool. Measurements were made against the local project files; the live GitHub Pages site was reachable but was not viewport-audited.
+**Tested with:** Microsoft Edge DevTools device mode at 375px, 768px and 1200px on all five pages, plus an automated Playwright audit (run through GitHub Copilot) at 320px to 1400px on the local files.
 
-Tested viewports were 320px, 640px, 768px, 992px, 1200px, and 1400px, plus a requested 375px viewport that rendered as 376px. All five pages were measured at each width. The document had no horizontal overflow in the 35 page and viewport combinations. Navigation labels stayed on one line; at 320px and the 376px proxy, the navigation scrolled inside its own box.
+| Viewport        | Result                                                                                                                                                                            |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mobile, 375px   | Pass. No sideways page scroll; navigation is a swipeable row; single column; images and video fit; services table scrolls inside its own box; contact form fields are full width. |
+| Tablet, 768px   | Pass. No page overflow; nav labels on one line; two-column layouts; 16px body text.                                                                                               |
+| Desktop, 1200px | Pass. No page overflow; nav labels on one line; three-column grids display.                                                                                                       |
 
-| Viewport            | Measured result                                                                                                                                                                                    |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mobile, 376px proxy | One-column main grids; navigation scrolls horizontally within its box. The services table scrolls within its container. All 10 contact form fields are labeled and full-width within their groups. |
-| Tablet, 768px       | No document overflow; two-column main grids; navigation labels remain on one line. Body text measures 16px.                                                                                        |
-| Desktop, 1200px     | No document overflow; `.grid-3` and gallery grids have three columns; navigation labels remain on one line. Body text measures 16px.                                                               |
+The audit covered 35 page and width combinations with no page overflow. Layouts change at 640px (two columns) and 992px (three columns).
 
-The one-to-two-column changes begin at 640px. `.grid-3` and gallery grids change from two to three columns at 992px. The hero remains two columns from 640px upward; `.grid-2` and contact layouts remain two columns after 640px.
+**Accessibility:** visible keyboard focus and a working skip link; all 10 contact form fields have labels; body text contrast is 17:1 and body text is 16px.
 
-All four gallery images loaded and fit their containers at the tested widths. Three source images are cropped to 4:3 with `object-fit: cover`; the printer image displays at approximately 16:9. The contact map iframe fits its 16:9 container. The gallery video box is 16:9, but the video did not decode, so playback and source aspect ratio were not verified.
+**Issue found and fixed:** navigation labels ("About Us", "Booking & Contact") wrapped onto several lines on tablet and desktop. The equal-width grid columns were too narrow, so the columns now size to their labels and the labels stay on one line.
 
-**Accessibility measurements:** Body text measured 16px, with 17.14:1 contrast on white content panels. Normal navigation text measured 11.35:1; hovered navigation text measured 4.51:1. Inline links on the off-white panel measured 4.34:1 on hover. Button text measured 4.51:1. Keyboard focus indicators were observed, and the skip link revealed and navigated to `#main-content`. At the 376px proxy, some inline text links were 19px high, below a 44px target height.
-
-**Limits:** Exact 375px was not tested because the browser rendered the requested width as 376px. Physical touch devices, other browsers, screen readers, video playback, and the live site's responsive behavior were not tested.
+**Known limits:** inline links reach 4.34:1 contrast on hover, just under the 4.5:1 target, and some inline text links are smaller than 44px on mobile. The gallery video's playback was not verified by the automated audit. Real touch devices, other browsers and screen readers were not tested.
 
 ## Evidence Screenshot of Responsiveness
 
