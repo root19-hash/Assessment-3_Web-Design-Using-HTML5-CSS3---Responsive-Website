@@ -32,13 +32,15 @@ Users can complete a print request form containing information such as:
 - Name
 - Student/Staff ID
 - Email
+- Phone number
 - Document name
+- Selected service
 - Number of copies
 - Print type
 - Paper size
 - Additional instructions
 
-This feature is especially useful because the assignment requires at least one substantial form with labels, suitable input types, and HTML5 validation.
+Users can use the print request form to provide their name, Student/Staff ID, email address, phone number, document name, selected service, number of copies, print type, paper size, and optional additional instructions.
 
 ## Find Contact and Service Information
 
@@ -57,13 +59,21 @@ Users can:
 
 - `index.html` - homepage and printing service overview
 - `services.html` - available services, prices, paper sizes, and instructions
-- `contact.html` - booking form, operating hours, contact details, and map
+- `contact.html` - print request form, operating hours, contact details, and map
 - `gallery.html` - printing examples, facilities, and walkthrough video
 - `about.html` - service mission and reasons to choose the service
 
 ## Technologies and constraints
 
 This is a static website using semantic HTML5 and custom CSS3. Layout uses Flexbox and CSS Grid with responsive changes below `640px`, from `640px` to `991px`, and from `992px` upward. No JavaScript or external frameworks are used.
+
+## Design System
+
+Colour variables: `--terracotta: #c65320`, `--terracotta-dark: #9f3f1b`, `--maroon: #5b1f32`, `--maroon-dark: #3e1422`, `--chocolate: #241915`, `--cream: #f8f4ed`, `--paper: #fffaf3`, `--surface: #ffffff`, `--border: #dbc8b8`, and `--muted: #695b54`.
+
+Headings, table headings, buttons, and navigation links use `Georgia, "Times New Roman", serif`; body text uses `"Trebuchet MS", Verdana, sans-serif`.
+
+Spacing uses rem-based tokens: `--space-1: 0.35rem`, `--space-2: 0.7rem`, `--space-3: 1rem`, `--space-4: 1.5rem`, `--space-5: 2rem`, `--space-6: 3rem`, and `--space-7: 4.5rem`. Other spacing uses rem-based `gap`, `padding`, and margin declarations, including nav `gap: 0.5rem`, grid `gap: 1.5rem`, and link `padding: 0.65rem 0.9rem`.
 
 ## Assets
 
@@ -120,11 +130,20 @@ A3/
 ├── services.html
 └── style.css
 
+## Git History
+
+- Define structured CSS Grid content layouts
+- Add mobile tablet and desktop breakpoints
+- Refine design tokens typography and spacing
+- Align quick updates across responsive pages
+- Restore nav appearance without label wrapping
+- Update README responsive testing summary
+
 ## Assistance Received
 
 GitHub Copilot helped with the following project tasks while the project owner reviewed and controlled the final changes:
 
-- Reviewed the existing A2 HTML structure and helped plan a consistent visual system.
+- Reviewed the existing HTML structure and helped plan a consistent visual system.
 - Built and refined the custom CSS design tokens, typography, spacing, colors, buttons, forms, Flexbox layouts, Grid layouts, and responsive breakpoints.
 - Improved the navigation bar, including its horizontal layout, maroon background, readable text, and mobile overflow behavior.
 - Removed the unnecessary horizontal Quick Updates banner from the homepage.
