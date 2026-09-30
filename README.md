@@ -115,6 +115,18 @@ The audit covered 35 page and width combinations with no page overflow. Layouts 
 - Local image and video paths were checked against the `Images/` and `Video/` folders.
 - `git diff --check` passed after the latest edits.
 
+## HTML Validation Evidence
+
+The website pages were tested using the W3C HTML Validator:
+
+**Validation Results**
+
+1. **index.html** — Document checking completed. No errors or warnings to show.
+2. **about.html** — Document checking completed. No errors or warnings to show.
+3. **services.html** — Document checking completed. No errors or warnings to show.
+4. **contact.html** — Document checking completed. No errors or warnings to show.
+5. **gallery.html** — Document checking completed. No errors or warnings to show.
+
 ## Project Structure
 
 A3/
